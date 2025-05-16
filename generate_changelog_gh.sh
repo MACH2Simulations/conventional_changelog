@@ -18,7 +18,7 @@ git -C /github/workspace fetch --unshallow
 > $CHANGELOG_FILE
 
 # Add the introductory text to the changelog
-echo "# Changelog" >> $CHANGELOG_FILE
+# echo "# Changelog" >> $CHANGELOG_FILE
 echo "+++" >> $CHANGELOG_FILE
 echo "title = \"Changelog\"" >> $CHANGELOG_FILE
 echo "weight = 10000 " >> $CHANGELOG_FILE
@@ -42,7 +42,7 @@ echo "Repository:"
 echo $GITHUB_REPO_URL
 
 # Fetch the latest changes
-git fetch --tags
+git fetch --tags --depth=10
 echo "Fetched latest tags."
 
 # Get the latest tag
