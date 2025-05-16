@@ -66,7 +66,7 @@ TAG_TO=HEAD
 CATEGORIES="feat fix ci perf docs gitops deploy test demo build chore style refactor"
 
 # Regular expression for matching conventional commits
-CONVENTIONAL_COMMIT_REGEX="^.* (feat|fix|ci|perf|docs|gitops|deploy|test|demo|build|chore|style|refactor)(\(.*\))?: "
+CONVENTIONAL_COMMIT_REGEX="^.* (feat|fix|ci|perf|docs|gitops|deploy|test|demo|build|style|refactor)(\(.*\))?: "
 
 print_tag() {
     echo "Processing tag: $2"
