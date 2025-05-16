@@ -8,7 +8,7 @@ trap 'echo "An error occurred at line $LINENO. Exiting."' ERR
 
 # Path to the Git repository (current directory)
 REPO_DIR="."
-CHANGELOG_FILE="$REPO_DIR/CHANGELOG.md"
+CHANGELOG_FILE="$REPO_DIR/content/docs/CHANGELOG.md"
 
 echo "Starting changelog generation script..."
 git config --global --add safe.directory /github/workspace
