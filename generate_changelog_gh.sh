@@ -19,6 +19,10 @@ git -C /github/workspace fetch --unshallow
 
 # Add the introductory text to the changelog
 echo "# Changelog" >> $CHANGELOG_FILE
+echo "+++" >> $CHANGELOG_FILE
+echo "title = \"Changelog\"" >> $CHANGELOG_FILE
+echo "weight = 10000 " >> $CHANGELOG_FILE
+echo "+++" >> $CHANGELOG_FILE
 echo "" >> $CHANGELOG_FILE
 echo "All notable changes to this project will be documented in this file." >> $CHANGELOG_FILE
 echo "" >> $CHANGELOG_FILE
